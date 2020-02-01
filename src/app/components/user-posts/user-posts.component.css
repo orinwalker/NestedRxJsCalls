@@ -1,0 +1,7 @@
+.blog-posts {
+    padding: 10px;
+}
+
+.blog-posts li {
+    list-style-type: none;
+}
