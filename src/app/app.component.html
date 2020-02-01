@@ -44,6 +44,14 @@
     font-weight: 600;
   }
 
+  .toolbar nav {
+    margin-left: 10px;
+  }
+
+  .toolbar nav a {
+    color: white;
+  }
+
   .toolbar img {
     margin: 0 16px;
   }
@@ -295,11 +303,17 @@
   }
 </style>
 
+<!-- Toolbar -->
+<div class="toolbar" role="banner">
+    <nav>
+        <a routerLink="/home" routerLinkActive="active">Home</a> | 
+        <a routerLink="/about" routerLinkActive="active">About</a>
+        <h1>Angular Nested RxJs Calls</h1>
+        
+      </nav>
+  </div>
+
 <div class="content" role="main">
-  <h1>Angular Nested RxJs Calls</h1>
-  
-  <app-about></app-about>
-    <hr>
-    <h2>Blog Posts</h2>
-    <app-user-posts></app-user-posts>
+  <router-outlet></router-outlet>
 </div>
+

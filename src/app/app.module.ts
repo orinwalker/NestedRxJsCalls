@@ -4,14 +4,15 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { UserPostsComponent } from './modules/user-posts/user-posts.component';
-import { AboutComponent } from './modules/about/about.component';
-
+import { UserPostsComponent } from './components/user-posts/user-posts.component';
+import { HomePageComponent } from './components/home-page/home-page.component';
+import { AboutComponent } from './components/about/about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserPostsComponent,
+    HomePageComponent,
     AboutComponent
   ],
   imports: [
