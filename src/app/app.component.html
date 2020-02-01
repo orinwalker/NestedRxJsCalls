@@ -297,37 +297,8 @@
 
 <div class="content" role="main">
   <h1>Angular Nested RxJs Calls</h1>
-  <h2>Project Information</h2>
-
-  <p>
-    <strong>Author: Orin Walker<br>
-    For questions/comments/suggestions contact: orin.walker@gmail.com
-  </strong><br><br>
-  </p>
-  <p>This project demonstrates the use of calls to two-different web-service endpoints via RxJs.
-    The application makes use of <a href='http://jsonplaceholder.com'>http://jsonplaceholder.com</a> as a Fake/Mock REST API to return Blog Posts and Users (Authors).</p>
-
-    <h3>Blog Posts</h3>
-    <p>The first web-service endpoint gathers a list of user blog posts and contains the author's userId, using this web-service endpoint: <a href="http://jsonplaceholder.typicode.com/posts">http://jsonplaceholder.typicode.com/posts</a></p>
-
-    <h3>Users/Authors</h3>
-    <p>The second web-service endpoint returns User/Author data (where '1' represents the userId): <a href="http://jsonplaceholder.typicode.com/users/1">http://jsonplaceholder.typicode.com/users/1</a></p>
-    
-    <h3>Combining the Data for Presentation</h3>
-    <p>The blog post data (IPosts) is iterated over, and then the post's userId is passed to the /users webservice.
-      Passing the userId, allows the /users web-service to return the appropriate user (IUser) object.</p>
-
-    <h3>Typescript Interfaces</h3>
-    <p>The service located at <a href='http://www.json2ts.com/'>http://www.json2ts.com/</a>
-       allows generation of interfaces for the jsonplaceholder user and blog posts data. 
-       The app then uses the generated interfaces rather than using the more generic 'any' type</p>
-
-    <h3>Safe Navigation Operator</h3>
-    <p>The user's name may not be immediately available use to
-      the asynchonious nature of the RsJS call, so the safe navigation operator (?.) 
-      must be used to ensure console errors are not thrown.<br><br>
-      <em>Example: </em><code>apost.user?.name</code>
-    </p>
+  
+  <app-about></app-about>
     <hr>
     <h2>Blog Posts</h2>
     <app-user-posts></app-user-posts>
